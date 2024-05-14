@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/PokeEasySave/static/css/main.f855e6bc.css",
-    "main.js": "/PokeEasySave/static/js/main.b8f86a19.js",
-    "static/js/453.ed3810f9.chunk.js": "/PokeEasySave/static/js/453.ed3810f9.chunk.js",
-    "static/media/logo.svg": "/PokeEasySave/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/PokeEasySave/static/css/main.e1951b42.css",
+    "main.js": "/PokeEasySave/static/js/main.a136cd6f.js",
     "index.html": "/PokeEasySave/index.html",
-    "main.f855e6bc.css.map": "/PokeEasySave/static/css/main.f855e6bc.css.map",
-    "main.b8f86a19.js.map": "/PokeEasySave/static/js/main.b8f86a19.js.map",
-    "453.ed3810f9.chunk.js.map": "/PokeEasySave/static/js/453.ed3810f9.chunk.js.map"
+    "main.e1951b42.css.map": "/PokeEasySave/static/css/main.e1951b42.css.map",
+    "main.a136cd6f.js.map": "/PokeEasySave/static/js/main.a136cd6f.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.b8f86a19.js"
+    "static/css/main.e1951b42.css",
+    "static/js/main.a136cd6f.js"
   ]
 }
