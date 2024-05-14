@@ -41,20 +41,21 @@ export default function Detail() {
           <p>Last Updated: {card.tcgplayer.updatedAt}</p>
           {card && card.tcgplayer && card.tcgplayer.prices && card.tcgplayer.prices.normal && (
             <div className="row">
+                <h3>Normal</h3>
             <div className="col-sm-3 col-xs-6">
-            <p>Normal Market</p>
+            <p>Market</p>
             <h2 className='market'>${tcgplayer.prices.normal.market}</h2>
             </div>
             <div className="col-sm-3 col-xs-6">
-            <p>Normal Low</p>
+            <p>Low</p>
             <h2 className="low">${tcgplayer.prices.normal.low}</h2>
             </div>
             <div className="col-sm-3 col-xs-6">
-            <p>Normal Mid</p>
+            <p>Mid</p>
             <h2 className='mid'>${tcgplayer.prices.normal.mid}</h2>
             </div>
             <div className="col-sm-3 col-xs-6">
-            <p>Normal High</p>
+            <p>High</p>
             <h2 className='high'>${tcgplayer.prices.normal.high}</h2>
             </div>
             </div>
@@ -62,40 +63,42 @@ export default function Detail() {
           
         {card && card.tcgplayer && card.tcgplayer.prices && card.tcgplayer.prices.holofoil && (
             <div className="row">
+                <h3>Holofoil</h3>
             <div className="col-sm-3 col-xs-6">
-            <p>Holofoil Market</p>
+            <p>Market</p>
             <h2 className='market'>${tcgplayer.prices.holofoil.market}</h2>
             </div>
             <div className="col-sm-3 col-xs-6">
-            <p>Holofoil Low</p>
+            <p>Low</p>
             <h2 className="low">${tcgplayer.prices.holofoil.low}</h2>
             </div>
             <div className="col-sm-3 col-xs-6">
-            <p>Holofoil Mid</p>
+            <p>Mid</p>
             <h2 className='mid'>${tcgplayer.prices.holofoil.mid}</h2>
             </div>
             <div className="col-sm-3 col-xs-6">
-            <p>Holofoil High</p>
+            <p>High</p>
             <h2 className='high'>${tcgplayer.prices.holofoil.high}</h2>
             </div>
             </div>
         )}
         {card && card.tcgplayer && card.tcgplayer.prices && card.tcgplayer.prices.reverseHolofoil && (
             <div className="row">
+                <h3>ReverseHolofoil</h3>
             <div className="col-sm-3 col-xs-6">
-            <p>ReverseHolofoil Market</p>
+            <p>Market</p>
             <h2 className='market'>${tcgplayer.prices.reverseHolofoil.market}</h2>
             </div>
             <div className="col-sm-3 col-xs-6">
-            <p>ReverseHolofoil Low</p>
+            <p>Low</p>
             <h2 className="low">${tcgplayer.prices.reverseHolofoil.low}</h2>
             </div>
             <div className="col-sm-3 col-xs-6">
-            <p>ReverseHolofoil Mid</p>
+            <p>Mid</p>
             <h2 className='mid'>${tcgplayer.prices.reverseHolofoil.mid}</h2>
             </div>
             <div className="col-sm-3 col-xs-6">
-            <p>ReverseHolofoil High</p>
+            <p>High</p>
             <h2 className='high'>${tcgplayer.prices.reverseHolofoil.high}</h2>
             </div>
             </div>
