@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import pokemon from 'pokemontcgsdk';
 pokemon.configure(
@@ -9,6 +9,19 @@ export default function HomePage() {
   const [data, setData] = useState([]);
   const [input, setInput] = useState(null);
   const [error, setError] = useState('');
+  
+  useEffect(()=>{
+    const savedInput = localStorage.getItem('searchInput');
+    const savedData = localStorage.getItem('searchData');
+
+    if(savedInput) {
+        setInput(savedInput);
+    }
+
+    if(savedData) {
+        setData(JSON.parse(savedData));
+    }
+  },[]);
 
   function handleChange (e) {
     setInput(e.target.value)
@@ -24,6 +37,9 @@ export default function HomePage() {
     .then(result => {
       setData(result.data)
       footer.style.bottom='auto';
+
+      localStorage.setItem('searchInput', input);
+      localStorage.setItem('searchData', JSON.stringify(result.data));
     })
     .catch(error=>{
       setError(error)
@@ -35,7 +51,7 @@ export default function HomePage() {
     return (
       <div id='mid-container' className='row'>
         <div className='searchBar'>
-          <input type='text' onChange={handleChange} placeholder='search by name' />
+          <input type='text' onChange={handleChange} value={input} placeholder='search by name' />
           <button onClick={fetchData}>Search</button>
         </div>
       { error?
