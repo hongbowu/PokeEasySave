@@ -45,7 +45,7 @@ export default function HomePage() {
       :
         data.map((card, index) => (
         <div className='col-3 cards' key={index}>
-          <Link to={`/detail/${card.id}`}>
+          <Link to={`PokeEasySave/detail/${card.id}`}>
           {card && card.images && card.images.small && (
           <img src={ card.images.small } alt={card.name}/>
           )}

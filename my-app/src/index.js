@@ -4,12 +4,12 @@ import './index.css';
 import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import Detail from './pages/detail';
-import HomePage from './pages/Homepage';
+import Detail from './pages/details';
+import HomePage from './pages/Homepage'
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/PokeEasySave',
     element:<App/>,
     children:[
       {
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
         element: <HomePage/>,
       },
       {
-        path: '/detail/:id',
+        path: 'PokeEasySave/detail/:id',
         element: <Detail/>
       }
     ]
