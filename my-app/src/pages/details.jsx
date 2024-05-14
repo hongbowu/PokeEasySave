@@ -33,7 +33,7 @@ export default function Detail() {
           <img src={images.large} alt={card.name} />
         )}
       </div>
-      <div className="col-xl-3 col-xs-12">
+      <div className="col-xl-5 col-xs-12">
         {card && card.tcgplayer && card.tcgplayer.url && (
           <a href={card.tcgplayer.url}>Buy From Player</a>
         )}
