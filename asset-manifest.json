@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/PokeEasySave/static/css/main.2e8a9026.css",
-    "main.js": "/PokeEasySave/static/js/main.10e9e924.js",
+    "main.js": "/PokeEasySave/static/js/main.ff6e61d2.js",
     "index.html": "/PokeEasySave/index.html",
     "main.2e8a9026.css.map": "/PokeEasySave/static/css/main.2e8a9026.css.map",
-    "main.10e9e924.js.map": "/PokeEasySave/static/js/main.10e9e924.js.map"
+    "main.ff6e61d2.js.map": "/PokeEasySave/static/js/main.ff6e61d2.js.map"
   },
   "entrypoints": [
     "static/css/main.2e8a9026.css",
-    "static/js/main.10e9e924.js"
+    "static/js/main.ff6e61d2.js"
   ]
 }
