@@ -39,12 +39,12 @@ div .cards {
   justify-content: space-around;
 }
 
-.card img {
+.cards img {
   width: 245px;
   height: 346px;
 }
 
-.card p {
+.cards p {
   color: black;
 }
 
